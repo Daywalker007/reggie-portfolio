@@ -1,0 +1,30 @@
+@import './breakpoints';
+
+@for $i from 1 through 10 {
+    .col-#{$i*10} {
+        width: calc(10% * $i);
+    }
+    @include breakpoint-up(sm){
+        .col-sm-#{$i*10} {
+            width: calc(10% * $i);
+        }
+    }
+    @include breakpoint-up(md){
+        .col-md-#{$i*10} {
+            width: calc(10% * $i);
+        }
+    }
+    @include breakpoint-up(lg){
+        .col-lg-#{$i*10} {
+            width: calc(10% * $i);
+        }
+    }
+    @include breakpoint-up(xl){
+        .col-xl-#{$i*10} {
+            width: calc(10% * $i);
+        }
+    }
+}
+.col{
+    flex: 1 0 auto;
+}

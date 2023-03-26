@@ -1,0 +1,46 @@
+@import './util/colors';
+@import './util/mixins';
+
+.navbar{
+    position: sticky;
+    padding: 15px 30px;
+    
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 2px darken($bg-color, 5);
+    background-color: $bg-color;
+
+    .hamburger-menu{
+        width: 20px;
+        transition-duration: 0.5s;
+        
+        .icon {
+          @include icon(4px, 20px);
+          
+          &:before{
+            @include icon-before(4px, 20px, -8px);
+          }
+          
+          &:after{
+            @include icon-after(4px, 20px, 8px);
+          }
+        }
+        
+        &.open {
+          .icon {
+            transition: 0.5s;
+            
+            &:before{
+              transform: rotateZ(-45deg) scaleX(0.75) translate(-20px, -6px);
+            }
+      
+            &:after{
+              transform: rotateZ(45deg) scaleX(0.75) translate(-20px, 6px);
+            }
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+}

@@ -1,0 +1,72 @@
+@import './breakpoints';
+$sm-fs: 2em;
+$md-fs: 3em;
+$lg-fs: 4em;
+
+.font-size-sm {
+    font-size: $sm-fs;
+}
+
+.font-size-md {
+    font-size: $md-fs;
+}
+
+.font-size-lg {
+    font-size: $lg-fs;
+}
+
+@include breakpoint-up(sm) {
+    .font-size-sm-sm {
+        font-size: $sm-fs;
+    }
+
+    .font-size-sm-md {
+        font-size: $md-fs;
+    }
+
+    .font-size-sm-lg {
+        font-size: $lg-fs;
+    }
+}
+
+@include breakpoint-up(md) {
+    .font-size-md-sm {
+        font-size: $sm-fs;
+    }
+
+    .font-size-md-md {
+        font-size: $md-fs;
+    }
+
+    .font-size-md-lg {
+        font-size: $lg-fs;
+    }
+}
+
+@include breakpoint-up(lg) {
+    .font-size-lg-sm {
+        font-size: $sm-fs;
+    }
+
+    .font-size-lg-md {
+        font-size: $md-fs;
+    }
+
+    .font-size-lg-lg {
+        font-size: $lg-fs;
+    }
+}
+
+@include breakpoint-up(lg) {
+    .font-size-lg-sm {
+        font-size: $sm-fs;
+    }
+
+    .font-size-lg-md {
+        font-size: $md-fs;
+    }
+
+    .font-size-lg-lg {
+        font-size: $lg-fs;
+    }
+}

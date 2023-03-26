@@ -1,0 +1,56 @@
+@import './util/colors';
+
+.info-section{
+    //*{border: solid purple;}
+    position: relative;
+    
+    &::before{
+        transform: skewX(-20deg) translateX(-11%);
+        background-color: $light-blue;
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;        
+        width: 70%;        
+        height: 100%;
+        top: 0%;
+    }
+    
+    .about{
+        position: relative;
+        color: $bg-color;
+
+        h2{
+            display: block;
+            width: fit-content;
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 30%;
+                right: -30%;
+                z-index: -1;
+
+                width: 100px;
+                height: 100px;
+                border-radius: 150px;
+
+                background: $bg-color;
+            }
+        }
+
+        p{
+            
+        }
+    }
+
+    .self-portrait{
+        filter: grayscale(1);
+        transition: all 0.25s;
+
+        &:hover{
+            filter: none;
+        }
+    }
+}
