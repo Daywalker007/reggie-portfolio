@@ -1,7 +1,20 @@
+.skill-showcase{
+    margin: auto;
+    width: 80vw;
+
+    h2{
+        text-align: center;
+    }
+
+    .skill-container{
+        margin: auto;
+    }
+}
+
 .skill-card{
-    background-color: $light-bg;
+    background-color: getColor(text);
     display: flex;
-    color: $dark-bg;
+    color: getColor(bg);
     width: fit-content;
     padding: 10px 15px;
     border-radius: 10px;

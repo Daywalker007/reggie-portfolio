@@ -1,8 +1,41 @@
+$color-dark:(
+    bg: #2d2a32,
+    text: #dcdcdd,
+    c-red: #ff0035,
+    light-blue: #5b85aa,
+    c-blue: #006daa,
+);
 
-    $dark-bg: #2d2a32;
-    $light-bg: #dcdcdd;
-    $c-red: #ff0035;
-    $light-blue: #5b85aa;
-    $c-blue: #006daa;
-    $bg-color: $dark-bg;
-    $text-color: $light-bg;
+$color-light:(
+    bg: #dcdcdd,
+    text: #2d2a32,
+    c-red: #ff0035,
+    light-blue: #5b85aa,
+    c-blue: #006daa,
+);
+
+$current-colors: $color-dark;
+
+:root{
+    @each $name, $color in $color-dark{
+        --color-#{$name}:#{$color};
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        @each $name, $color in $color-light{
+            --color-#{$name}:#{$color};
+        }
+    }
+
+    $current-colors: $color-light;
+}
+
+@function getColor($name){
+    @return var(--color-#{$name})
+}
+
+@function getColorValue($name){
+    @return map-get($current-colors, $name)
+}
