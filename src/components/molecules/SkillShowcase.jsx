@@ -1,7 +1,10 @@
 import React from 'react'
+import SkillCard from '../atoms/SkillCard'
 
 export default function SkillShowcase() {
   return (
-    <div>SkillShowcase</div>
+    <div>
+        <SkillCard />
+    </div>
   )
 }

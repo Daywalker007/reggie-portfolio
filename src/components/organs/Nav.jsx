@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 
-import './style/nav.scss'
+import '../style/nav.scss'
 
 export default function Nav() {
     let menuBtn = useRef();
@@ -14,8 +14,8 @@ export default function Nav() {
     <div className='navbar flex justify-between'>
         <span>Logo</span>
 
-        <div class={`hamburger-menu ${isOpen && 'open'}`} ref={menuBtn} onClick={toggleClasses}>
-            <div class="icon"></div>
+        <div className={`hamburger-menu ${isOpen && 'open'}`} ref={menuBtn} onClick={toggleClasses}>
+            <div className="icon"></div>
         </div>
     </div>
   )

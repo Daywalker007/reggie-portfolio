@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import About from './components/About'
-import Heading from './components/Hero'
-import Nav from './components/Nav'
-import PrevWorks from './components/PrevWorks'
+import About from './components/organs/About'
+import Heading from './components/organs/Hero'
+import Nav from './components/organs/Nav'
+import PrevWorks from './components/molecules/PrevWorks'
+import SkillShowcase from './components/molecules/SkillShowcase'
 import './index.scss'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <div className="container">
         <About />
         <PrevWorks />
+        <SkillShowcase />
       </div>
     </div>
     </>
