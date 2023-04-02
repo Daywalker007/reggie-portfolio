@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/workcard.scss'
+// import '../style/workcard.scss'
 
 export default function WorkCard({link, name, desc}) {
   return (

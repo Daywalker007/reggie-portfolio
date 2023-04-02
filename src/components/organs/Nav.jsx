@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 
-import '../style/nav.scss'
+//import '../style/nav.scss'
 
 export default function Nav() {
     let menuBtn = useRef();

@@ -3,8 +3,8 @@ import SkillCard from '../atoms/SkillCard'
 
 export default function SkillShowcase() {
   return (
-    <div>
-        <SkillCard />
-    </div>
+    <section>
+        <SkillCard name='react' desc="React.js" />
+    </section>
   )
 }

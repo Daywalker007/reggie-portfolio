@@ -1,7 +1,7 @@
 import React from 'react'
 import WorkCard from '../atoms/WorkCard'
 
-import '../style/prev-works.scss'
+// import '../style/prev-works.scss'
 
 export default function PrevWorks() {
   return (

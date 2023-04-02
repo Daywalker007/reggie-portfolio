@@ -1,11 +1,12 @@
 import React from 'react'
+
 import 'boxicons'
 
-export default function SkillCard() {
+export default function SkillCard({name, desc}) {
   return (
-    <div className='flex'>
-        <box-icon type='logo' name='react'></box-icon>
-        <div>World</div>
+    <div className='skill-card'>
+        <box-icon type='logo' name={name}></box-icon>
+        <div>{desc}</div>
     </div>
   )
 }
