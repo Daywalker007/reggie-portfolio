@@ -30,7 +30,10 @@ $quaterSecondAnim: all 0.25s ease;
         transition: $quaterSecondAnim;
         pointer-events: none;
         
-        h2,p{margin: 0;}
+        h2,p{
+            margin: 0;
+            color: map-get($map: $color-dark, $key: text);
+        }
 
         position: absolute;
         top: 100%;

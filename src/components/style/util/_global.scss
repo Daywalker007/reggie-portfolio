@@ -37,6 +37,7 @@
     background-color: getColor(bg);
     border: solid 2px getColor(text);;
     border-radius: 10px;
+    color: getColor(text);
   
     transition: all 0.2s ease;
   
