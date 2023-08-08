@@ -1,17 +1,22 @@
 import React from 'react'
 import SkillCard from '../atoms/SkillCard'
+import TitleText from '../atoms/TitleText'
 
 export default function SkillShowcase() {
   return (
-    <section className='skill-showcase col-90'>
-        <h2 className='font-size-lg'>Skills</h2>
-        <div className='skill-container col-50 flex justify-between'>
+    <section className='w-4/5 m-auto py-20'>
+        <TitleText>skills</TitleText>
+        <div className='flex flex-wrap gap-10'>
           <SkillCard name='react' desc="React" fillColor={'#61DBFB'} />
           <SkillCard name='javascript' desc="Javascript" fillColor={'#F0DB4F'} />
           <SkillCard name='html5' desc="HTML" fillColor={'orange'} />
           <SkillCard name='visual-studio' desc="C#" fillColor={'cyan'} />
           <SkillCard name='css3' desc="CSS" fillColor={'blue'} />
           <SkillCard name='sass' desc="SASS" fillColor={'pink'} />
+          <SkillCard name='tailwind-css' desc="Tailwind" fillColor={'pink'} />
+          <SkillCard name='bootstrap' desc="bootstrap" fillColor={'pink'} />
+          <SkillCard name='github' desc="Github" fillColor={'pink'} />
+          <SkillCard name='firebase' desc="firebase" fillColor={'pink'} />
         </div>
     </section>
   )

@@ -1,7 +1,5 @@
 import React, { useRef, useState } from 'react'
 
-//import '../style/nav.scss'
-
 export default function Nav() {
     let menuBtn = useRef();
     let [isOpen, setOpen] = useState(false);
@@ -11,11 +9,11 @@ export default function Nav() {
     }
 
   return (
-    <div className='navbar flex justify-between'>
-        <span>Logo</span>
+    <div className='flex justify-end px-25 py-25 shadow-dark'>
+        <span className='basis-1/3 text-center justify-self-center'>Logo</span>
 
-        <div className={`hamburger-menu ${isOpen && 'open'}`} ref={menuBtn} onClick={toggleClasses}>
-            <div className="icon"></div>
+        <div className={`hamburger-menu ${isOpen && 'open'} basis-1/3 text-end justify-self-end`} ref={menuBtn} onClick={toggleClasses}>
+            <div className="icon">hamburger</div>
         </div>
     </div>
   )

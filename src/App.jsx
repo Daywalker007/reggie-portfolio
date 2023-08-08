@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import About from './components/organs/About'
-import Heading from './components/organs/Hero'
+import Hero from './components/organs/Hero'
 import Nav from './components/organs/Nav'
 import PrevWorks from './components/molecules/PrevWorks'
 import SkillShowcase from './components/molecules/SkillShowcase'
-import './index.scss'
+import './index.css'
 
 function App() {
 
@@ -18,14 +18,12 @@ function App() {
         }
       `}
     </style>
-    <div className=''>
+    <div className='text-iceTheme-100 mx-10'>
       <Nav />
-      <Heading />
-      <div className="container">
-        <About />
-        <PrevWorks />
-        <SkillShowcase />
-      </div>
+      <Hero />
+      <About />
+      <PrevWorks />
+      <SkillShowcase />
     </div>
     </>
   )
