@@ -2,12 +2,6 @@ import React from 'react'
 import TextBox from '../atoms/TextBox'
 import CustomButton from '../atoms/Button'
 import TitleText from '../atoms/TitleText'
-import withClasses from '../atoms/withClasses'
-
-const ResumeButton = withClasses(
-  CustomButton,
-  'custom-class another-class'
-);
 
 export default function About() {
 
@@ -29,8 +23,9 @@ export default function About() {
         <div className="flex-1">
             <TextBox>
               I'm Reggie, a frontend engineer specializing in React and other cutting-edge technologies. With a keen eye for detail and a strong understanding of user experience, I bring designs to life by seamlessly integrating animations, dynamic content, and smooth transitions. Collaborating closely with designers and backend developers, I deliver intuitive and responsive web applications that captivate and engage users.
-              <ResumeButton
+              <CustomButton
                 text="Click me!"
+                className='block m-2'
               />
             </TextBox>
         </div>

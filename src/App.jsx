@@ -9,7 +9,7 @@ import './index.css'
 function App() {
 
   return (
-    <>
+    <main className='overflow-x-hidden'>
     {/* Used for setting a border testing purposes */}
     <style>
       {`
@@ -18,14 +18,14 @@ function App() {
         }
       `}
     </style>
-    <div className='text-iceTheme-100 mx-10'>
       <Nav />
+    <div className='text-iceTheme-100 mx-10'>
       <Hero />
       <About />
       <PrevWorks />
       <SkillShowcase />
     </div>
-    </>
+    </main>
   )
 }
 

@@ -19,7 +19,7 @@ export default function SkillCard({name, desc, fillColor = 'black'}) {
   }
 
   return (
-    <div className="text-center">
+    <div className="text-center bg-darkBG rounded p-10 w-[5rem]">
       <box-icon
         type="logo"
         name={name}

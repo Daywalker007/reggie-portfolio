@@ -4,9 +4,9 @@ import TitleText from '../atoms/TitleText'
 
 export default function SkillShowcase() {
   return (
-    <section className='w-4/5 m-auto py-20'>
+    <section className='m-auto py-20'>
         <TitleText>skills</TitleText>
-        <div className='flex flex-wrap gap-10'>
+        <div className='flex flex-wrap gap-10 mt-10'>
           <SkillCard name='react' desc="React" fillColor={'#61DBFB'} />
           <SkillCard name='javascript' desc="Javascript" fillColor={'#F0DB4F'} />
           <SkillCard name='html5' desc="HTML" fillColor={'orange'} />

@@ -9,7 +9,7 @@ export default function Nav() {
     }
 
   return (
-    <div className='flex justify-end px-25 py-25 shadow-dark'>
+    <div className='flex justify-end px-25 py-25 shadow-dark bg-darkBG text-iceTheme-100'>
         <span className='basis-1/3 text-center justify-self-center'>Logo</span>
 
         <div className={`hamburger-menu ${isOpen && 'open'} basis-1/3 text-end justify-self-end`} ref={menuBtn} onClick={toggleClasses}>
