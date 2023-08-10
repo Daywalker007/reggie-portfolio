@@ -17,8 +17,7 @@ export default function PrevWorks() {
   return (
     <>
       <CustomTitleText>past work</CustomTitleText>
-      <section className='flex gap-5 m-auto py-20 flex-wrap'>
-        {/* {console.log('Title Text Props: ', TitleText)} */}
+      <section className='flex gap-5 m-auto flex-wrap'>
           <WorkCard 
               link={''}
               name={'Temp Name 1'}

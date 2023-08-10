@@ -27,7 +27,7 @@ export default function SkillCard({name, desc, fillColor = 'black'}) {
         onMouseLeave={handleMouseOut}
         style={boxIconStyle}
       ></box-icon>
-      <div>{desc}</div>
+      <div className='text-sm'>{desc}</div>
     </div>
   );
 }

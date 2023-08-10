@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function TextBox({children}) {
   return (
-    <p className='bg-darkGray shadow-dark rounded-md p-10'>{children}</p>
+    <div className='bg-darkGray shadow-dark rounded-md p-10 h-full flex flex-col justify-center items-center lg:text-center'>
+      <p className='max-w-[607px] block'>{children}</p>
+    </div>
   )
 }
