@@ -13,7 +13,7 @@ function App() {
     <main className='overflow-x-hidden text-iceTheme-100 lg:flex'>
       <Nav />
       
-      <div className='mx-10 lg:w-4/5 lg:ml-auto'>
+      <div className='mx-10 lg:w-4/5 lg:ml-auto lg:my-[0.5dvh]'>
         <Hero />
         <About />
         <PrevWorks />

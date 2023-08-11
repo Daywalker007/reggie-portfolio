@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import NavButton from '../atoms/NavButton';
+import SkillCard from '../atoms/SkillCard';
 
 export default function Nav() {
     let menuBtn = useRef();
@@ -29,7 +30,9 @@ export default function Nav() {
         </div>
 
         <div className='hidden lg:block mt-auto'>
-          socials here
+          <a href="https://www.linkedin.com/in/reggie-mitchell-54b840121/">
+            <SkillCard name='linkedin-square' desc="LinkedIn" fillColor={'#0077b5'} />
+          </a>        
         </div>
 
     </div>

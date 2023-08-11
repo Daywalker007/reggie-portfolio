@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
 import 'boxicons'
+import Popover from './Popover'
 
-export default function SkillCard({name, desc, fillColor = 'black'}) {
+export default function SkillCard({name, desc, fillColor = 'black', hidePopover = false, popoverText}) {
   const [isHover, setIsHover] = useState(false)
 
   const handleMouseOver = () => {
@@ -13,20 +14,21 @@ export default function SkillCard({name, desc, fillColor = 'black'}) {
   }
 
   const boxIconStyle = {
-    fill: isHover ? fillColor : '#93DEFF',
+    fill: isHover ? fillColor : '#f7f7f7',
     transform: `scale(${isHover ? '115%' : '100%'})`,
     transition: 'all 0.2s ease'
   }
 
   return (
-    <div className="text-center bg-darkBG rounded p-10 w-[5rem]">
+    <div className="group text-center bg-darkBG rounded p-10 w-[5rem] relative cursor-pointer"
+      onMouseEnter={handleMouseOver}
+      onMouseLeave={handleMouseOut}>
+      {/* <Popover visible popoverText={popoverText}/> */}
+      {popoverText && <Popover visible={isHover} popoverText={popoverText}/>}
       <box-icon
         type="logo"
-        name={name}
-        onMouseEnter={handleMouseOver}
-        onMouseLeave={handleMouseOut}
-        style={boxIconStyle}
-      ></box-icon>
+        name={name}        
+        style={boxIconStyle} />
       <div className='text-sm'>{desc}</div>
     </div>
   );
