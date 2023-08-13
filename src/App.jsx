@@ -6,21 +6,24 @@ import PrevWorks from './components/molecules/PrevWorks'
 import SkillShowcase from './components/molecules/SkillShowcase'
 import './index.css'
 import Contact from './components/organs/Contact'
+import {ThemeContextProvider} from './context/ThemeContext'
 
 function App() {
 
   return (
-    <main className='overflow-x-hidden text-iceTheme-100 lg:flex'>
-      <Nav />
-      
-      <div className='mx-10 lg:w-4/5 lg:ml-auto lg:my-[0.5dvh]'>
-        <Hero />
-        <About />
-        <PrevWorks />
-        <SkillShowcase />
-        <Contact />
-      </div>
-    </main>
+    <ThemeContextProvider>
+      <main className='overflow-x-hidden text-iceTheme-100 lg:flex dark:bg-iceTheme-400'>
+        <Nav />
+        
+        <div className='mx-10 my-[1dvh] lg:w-4/5 lg:ml-auto lg:my-[0.5dvh]'>
+          <Hero />
+          <About />
+          <PrevWorks />
+          <SkillShowcase />
+          <Contact />
+        </div>
+      </main>
+    </ThemeContextProvider>
   )
 }
 

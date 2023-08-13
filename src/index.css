@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* #region Theme Toggle */
+/* Placement */
+.theme-toggle .react-toggle-track-check, .theme-toggle .react-toggle-track-x{
+    width: auto;
+    height: fit-content;
+    margin: 0 !important;
+    top: -0px;
+}
+
+/* Sun */
+.theme-toggle .react-toggle-track-check{
+    left: 3px;
+}
+.theme-toggle.react-toggle--checked .react-toggle-track {
+    background-color: white;
+}
+.theme-toggle.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track{
+    background-color: white;
+}
+
+/* Moon */
+.theme-toggle .react-toggle-track-x{
+    right: 3px;
+}
+.theme-toggle .react-toggle-track {
+    background-color: #323643;
+}
+.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track{
+    background-color: #323643;
+}
+
+/* Thumb */
+.react-toggle--checked .react-toggle-thumb{border-color: #28282A;}
+.react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb{
+    box-shadow: 0px 0px 5px 3px #93DEFF;
+
+}
+/* #endregion */

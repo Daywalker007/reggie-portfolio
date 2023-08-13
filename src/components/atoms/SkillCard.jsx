@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import 'boxicons'
 import Popover from './Popover'
 
-export default function SkillCard({name, desc, fillColor = 'black', hidePopover = false, popoverText}) {
+export default function SkillCard({name, desc, fillColor = 'black', popoverText}) {
   const [isHover, setIsHover] = useState(false)
 
   const handleMouseOver = () => {
@@ -20,7 +20,7 @@ export default function SkillCard({name, desc, fillColor = 'black', hidePopover 
   }
 
   return (
-    <div className="group text-center bg-darkBG rounded p-10 w-[5rem] relative cursor-pointer"
+    <div className={`group text-center bg-darkBG dark:bg-iceTheme-300 rounded p-10 w-[5rem] relative cursor-pointer`}
       onMouseEnter={handleMouseOver}
       onMouseLeave={handleMouseOut}>
       {/* <Popover visible popoverText={popoverText}/> */}
