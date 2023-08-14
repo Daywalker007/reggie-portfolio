@@ -41,7 +41,7 @@ export default function Contact() {
                     Feel free to contact me about any inqueries you may have. My usual response time is 1 - 2 business days.
                 </TextBox>
             </div>
-            <form onSubmit={handleValidate} method="post" className='bg-darkBG dark:bg-iceTheme-300 rounded p-10 space-y-10 basis-1/2'>
+            <form onSubmit={handleValidate} method="post" className='bg-iceTheme-300 rounded p-10 space-y-10 basis-1/2'>
                 <div className='space-y-10 md:space-y-0 md:flex md:gap-15'>
                     <InputField name={'Name'} id={'form-name'} onChange={handleInput} err={errors.Name} />
                     <InputField name={'Email'} id={'form-email'} onChange={handleInput} err={errors.Email} />

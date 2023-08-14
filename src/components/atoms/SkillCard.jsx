@@ -20,7 +20,7 @@ export default function SkillCard({name, desc, fillColor = 'black', popoverText}
   }
 
   return (
-    <div className={`group text-center bg-darkBG dark:bg-iceTheme-300 rounded p-10 w-[5rem] relative cursor-pointer`}
+    <div className={`group text-center bg-iceTheme-300 rounded p-10 w-[5rem] relative cursor-pointer`}
       onMouseEnter={handleMouseOver}
       onMouseLeave={handleMouseOut}>
       {/* <Popover visible popoverText={popoverText}/> */}

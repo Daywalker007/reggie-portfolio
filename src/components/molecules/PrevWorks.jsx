@@ -21,13 +21,13 @@ export default function PrevWorks() {
           
           <WorkCard 
               link={''}
-              name={'Temp Name 3'}
-              desc={'Another Short Desc'}
+              name={'Recipe App'}
+              desc={'Coming Soon'}
           />
 
           <WorkCard 
               link={''}
-              name={'Temp Name 4'}
+              name={'eMsg'}
               desc={'Coming Soon'}
           />
           

@@ -26,7 +26,7 @@ export default function Nav() {
     }
 
   return (
-    <div className='flex justify-end lg:justify-start lg:flex-col lg:w-[18%] lg:rounded-r-lg lg:h-[99dvh] lg:fixed lg:top-[0.5dvh] px-25 py-25 shadow-dark bg-darkBG dark:bg-iceTheme-300'>
+    <div className='flex justify-end lg:justify-start lg:flex-col lg:w-[18%] lg:rounded-r-lg lg:h-[99dvh] lg:fixed lg:top-[0.5dvh] px-25 py-25 shadow-dark bg-iceTheme-300'>
         
         {/* Main Bar */}
         <div className='flex w-full justify-between basis-2/3 lg:basis-0'>
@@ -38,7 +38,7 @@ export default function Nav() {
               className='theme-toggle basis-1/2'
               icons={{
                 checked: <box-icon name='sun' />,
-                unchecked: <box-icon name='moon' />
+                unchecked: <box-icon name='moon' style={{fill: 'white'}} />
               }}  
             />
           </label>

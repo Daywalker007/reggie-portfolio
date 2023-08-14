@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function WorkCard({link, name, desc}) {
   return (
-    <div className="inline-block relative group hover:scale-110 hover:z-50 transition-all hover:cursor-pointer w-[calc(50%-5px)] h-[16rem] 2xl:h-[350px]">
+    <div className="inline-block relative group hover:scale-105 hover:z-50 transition-all hover:cursor-pointer w-[calc(50%-5px)] h-[16rem] 2xl:h-[350px]">
       <a href={link}>
       <div className="absolute h-full inset-0 text-center flex flex-col justify-center align-middle">
         <h2 className=''>{name}</h2>
