@@ -42,7 +42,7 @@ export default function Nav() {
               }}  
             />
           </label>
-          <span className='basis-1/2 lg:basis-0 text-center justify-self-center'>Logo</span>
+          <span className='basis-1/2 lg:basis-0 text-center justify-self-center font-bold'>Reggie <br /> Mitchell</span>
         </div>
 
         {/* Mobile Nave */}
@@ -55,10 +55,10 @@ export default function Nav() {
 
         {/* Desktop Nav */}
         <div className='space-y-15 hidden lg:block mt-60'>
-          <NavButton sectionName={'about'} scrollTo={handleAboutClick}/>
-          <NavButton sectionName={'past work'} scrollTo={handleAboutClick}/>
-          <NavButton sectionName={'skills'} scrollTo={handleAboutClick}/>
-          <NavButton sectionName={'contact'} scrollTo={handleAboutClick}/>
+          <NavButton sectionName={'about'} scrollTo={'about'}/>
+          <NavButton sectionName={'past work'} scrollTo={'works'}/>
+          <NavButton sectionName={'skills'} scrollTo={'skills'}/>
+          <NavButton sectionName={'contact'} scrollTo={'contact'}/>
         </div>
 
         <div className='hidden lg:flex mt-auto'>

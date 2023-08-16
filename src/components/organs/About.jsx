@@ -14,7 +14,7 @@ export default function About() {
   }
 
   return (
-    <section className='m-auto flex flex-col py-20'>
+    <section className='m-auto flex flex-col py-20' id='about'>
       
       <TitleText>about me</TitleText>
       <div className='flex flex-col lg:flex-row-reverse gap-15'>

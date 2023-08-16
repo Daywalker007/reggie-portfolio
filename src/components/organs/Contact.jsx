@@ -33,7 +33,7 @@ export default function Contact() {
     }
 
   return (
-    <section>
+    <section id='contact'>
         <TitleText>contact</TitleText>
         <div className='flex gap-15'>
             <div className='basis-1/2'>

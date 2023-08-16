@@ -18,7 +18,7 @@ export default function SkillShowcase() {
   }
 
   return (
-    <section className='m-auto py-20'>
+    <section className='m-auto py-20' id='skills'>
         <TitleText>skills</TitleText>
         <div className='flex flex-wrap justify-center sm:w-4/5 sm:mx-auto lg:w-full gap-10 mt-10'>
           <SkillCard name='react' desc="React" fillColor={'#61DBFB'} popoverText={skillsDesc.react}/>

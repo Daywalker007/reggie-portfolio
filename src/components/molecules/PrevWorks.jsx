@@ -7,7 +7,7 @@ import HealthLogo from '../../assets/health-main-logo.svg'
 
 export default function PrevWorks() {
   return (
-    <>
+    <div id='works'>
       <TitleText>past work</TitleText>
       <section className='flex gap-5 m-auto flex-wrap'>
           <WorkCard 
@@ -39,6 +39,6 @@ export default function PrevWorks() {
           />
           
       </section>
-    </>
+    </div>
   )
 }
