@@ -8,11 +8,6 @@ import withLink from '../atoms/withLink'
 const LinkButton = withLink(CustomButton, PDF)
 
 export default function About() {
-
-  const openResume = () => {
-    window.open('../../assets/Reggie-Mitchell-Resume-2023.pdf');
-  }
-
   return (
     <section className='m-auto flex flex-col py-20' id='about'>
       
@@ -29,7 +24,9 @@ export default function About() {
         <div className="flex-1">
             <TextBox>
               I'm Reggie, a frontend engineer specializing in React and other cutting-edge technologies. With a keen eye for detail and a strong understanding of user experience, I bring designs to life by seamlessly integrating animations, dynamic content, and smooth transitions. Collaborating closely with designers and backend developers, I deliver intuitive and responsive web applications that captivate and engage users.
-              <LinkButton text="See Resume" className='block mx-auto'/>
+              <div>
+                <LinkButton text="See Resume" />
+              </div>
             </TextBox>
         </div>
       </div>

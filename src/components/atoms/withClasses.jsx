@@ -2,13 +2,12 @@
 
 import React from 'react';
 
-export default function withClasses(WrappedComponent) {
+export default function withClasses(WrappedComponent, classes) {
   return (props) => {
     console.log(props)
-    const newClassList = [props.className, ...props.className.split(' ').map(e => `!${e}`)];
-    console.log('New class list', newClassList)
+    console.log('New class list', classes)
 
 
-    return <WrappedComponent className={newClassList.join(' ')} {...props} />;
+    return <WrappedComponent className={classes} {...props} />;
   };
 }
