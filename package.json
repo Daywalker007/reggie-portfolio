@@ -12,6 +12,9 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@react-email/button": "0.0.10",
+    "@react-email/html": "0.0.4",
+    "@react-email/render": "0.0.7",
     "boxicons": "^2.1.4",
     "clsx": "^2.0.0",
     "email-js": "^2.0.2",

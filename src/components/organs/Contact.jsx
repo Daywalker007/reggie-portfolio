@@ -3,7 +3,7 @@ import TitleText from '../atoms/TitleText'
 import {InputField, InputTextArea} from '../atoms/Form'
 import TextBox from '../atoms/TextBox'
 import validateContactForm from '../../util/Validation'
-// import sendContactEmail from '../../util/SendEmail'
+import sendContactForm from '../../util/SendEmail'
 import CustomButton from '../atoms/Button'
 
 export default function Contact() {
@@ -29,7 +29,7 @@ export default function Contact() {
 
         console.log('Number of errors in from: ', Object.keys(newErrs).length)
         if(Object.keys(newErrs).length === 0)
-            sendContactEmail(contactInfo)
+            sendContactForm(contactInfo)
     }
 
   return (
