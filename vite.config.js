@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'build'
   },
-  base: 'https://daywalker007.github.io/reggie-portfolio/',
+  // base: 'https://daywalker007.github.io/reggie-portfolio/',
 })
