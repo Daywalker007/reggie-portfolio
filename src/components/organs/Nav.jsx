@@ -29,7 +29,7 @@ export default function Nav() {
     <div className='flex justify-end lg:justify-start lg:flex-col lg:w-[18%] lg:rounded-r-lg lg:h-[99dvh] lg:fixed lg:top-[0.5dvh] px-25 py-25 shadow-dark bg-iceTheme-300'>
         
         {/* Main Bar */}
-        <div className='flex w-full justify-between basis-2/3 lg:basis-0'>
+        <div className='flex w-full justify-between basis-2/3 lg:basis-0 mr-auto lg:mr-0'>
           <label>
             <Toggle 
               id='theme'
@@ -46,12 +46,12 @@ export default function Nav() {
         </div>
 
         {/* Mobile Nave */}
-        <div className={`hamburger-menu ${isOpen && 'open'} relative basis-1/3 text-end justify-self-end lg:hidden`} ref={menuBtn} onClick={toggleClasses}>
+        {/* <div className={`hamburger-menu ${isOpen && 'open'} relative basis-1/3 text-end justify-self-end lg:hidden`} ref={menuBtn} onClick={toggleClasses}>
             <div className="icon">
               <box-icon name='menu' style={{fill:"#f7f7f7"}}></box-icon>
             </div>
+        </div> */}
             {/* <MobileNav /> */}
-        </div>
 
         {/* Desktop Nav */}
         <div className='space-y-15 hidden lg:block mt-60'>
