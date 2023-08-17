@@ -7,6 +7,7 @@ import SkillShowcase from './components/molecules/SkillShowcase'
 import './index.css'
 import Contact from './components/organs/Contact'
 import {ThemeContextProvider} from './context/ThemeContext'
+import Notifications from './components/molecules/Notifications'
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
           <SkillShowcase />
           <Contact />
         </div>
+
+        {/* <Notifications /> */}
       </main>
     </ThemeContextProvider>
   )

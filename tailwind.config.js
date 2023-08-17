@@ -31,6 +31,17 @@ export default {
       '100':'100px',
     },
     extend: {
+      // that is animation class
+      animation: {
+        fade: 'fadeOut 3s',
+      },
+      // that is actual animation
+      keyframes: theme => ({
+        fadeOut: {
+          '0%': { opacity: 100 },
+          '100%': { opacity: 0 },
+        },
+      }),
       backgroundImage:{
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
