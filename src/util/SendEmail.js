@@ -1,6 +1,7 @@
 const sendContactForm = async (emailInfo) => {
     const uri = import.meta.env.BASE_URI || 'http://localhost:5000'
-    console.log('Using base uri: ', uri)
+    console.log('Import base uri: ', uri)
+    console.log('Process base uri: ', process.env.BASE_URI)
     return fetch(`${uri}/sendContactForm`, { // Enter your IP address here
         headers: {
             "Content-Type": "application/json",
