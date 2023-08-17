@@ -1,10 +1,6 @@
 export default function validateContactForm(infoObj) {
-    console.log('Running validation')
-
     const {Name, Email, Subject, Message} = infoObj
     const errors = {}
-
-    console.log('Validation obj', infoObj)
 
     const email_pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 

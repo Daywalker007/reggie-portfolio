@@ -1,7 +1,6 @@
 const sendContactForm = async (emailInfo) => {
     const uri = import.meta.env.VITE_BASE_URI || 'http://localhost:5000'
-    console.log('Import base uri: ', uri)
-    console.log('Process base uri: ', process.env.VITE_BASE_URI)
+
     return fetch(`${uri}/sendContactForm`, { // Enter your IP address here
         headers: {
             "Content-Type": "application/json",
@@ -11,11 +10,11 @@ const sendContactForm = async (emailInfo) => {
     })
     .then(response => response.json())
     .then(response => {
-        return response.success
+        return 'Email sent!'
     })
     .catch(error => {
         console.error('Error from frontend:', error);
-        return 'Issue with server, please try again'
+        return 'Email failed to send, please try again.'
     });
 }
 

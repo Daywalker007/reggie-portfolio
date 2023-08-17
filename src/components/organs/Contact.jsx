@@ -7,8 +7,12 @@ import sendContactForm from '../../util/SendEmail'
 import CustomButton from '../atoms/Button'
 import Toast from '../atoms/Toast'
 import Expire from '../atoms/Expire'
+import { useNotificationContext } from '../../context/NotificationContext'
 
 export default function Contact() {
+
+    const {toast, setToast} = useNotificationContext()
+
     const [contactInfo, setContactInfo] = useState({
         Name:'',
         Email:'',
@@ -17,7 +21,6 @@ export default function Contact() {
     })
 
     const [errors, setErrors] = useState({})
-    const [showToast, setShowToast] = useState(false)
 
     const handleInput = (e) => {
         const {name, value} = e.target
@@ -29,10 +32,9 @@ export default function Contact() {
         e.preventDefault()
         const newErrs = validateContactForm(contactInfo)
         setErrors(newErrs)
-
         if(Object.keys(newErrs).length === 0){
             const status = await sendContactForm(contactInfo)
-            setShowToast(status)
+            setToast([...toast, {msg:status, timer:3000}])
         }
     }
 
@@ -46,9 +48,6 @@ export default function Contact() {
                 </TextBox>
             </div>
             <form onSubmit={handleValidate} method="post" className='bg-iceTheme-300 rounded p-10 space-y-10 basis-1/2 relative'>
-                {showToast && <Expire delay={5000}>
-                    <Toast message='Email sent successfully'/>
-                </Expire>}
                 <div className='space-y-10 md:space-y-0 md:flex md:gap-15'>
                     <InputField name={'Name'} id={'form-name'} onChange={handleInput} err={errors.Name} />
                     <InputField name={'Email'} id={'form-email'} onChange={handleInput} err={errors.Email} />

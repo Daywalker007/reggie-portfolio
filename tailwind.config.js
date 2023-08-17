@@ -33,7 +33,7 @@ export default {
     extend: {
       // that is animation class
       animation: {
-        fade: 'fadeOut 3s',
+        fade: 'fadeOut 1s',
       },
       // that is actual animation
       keyframes: theme => ({

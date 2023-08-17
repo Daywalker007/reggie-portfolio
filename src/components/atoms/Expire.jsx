@@ -11,5 +11,5 @@ export default function Expire({delay, children}) {
         return () => clearTimeout(timer)
     }, [delay])
 
-  return visible ? <>{children}</> : <div />
+  return visible ? <div className={`animate-fade`} style={{animationDelay:`${delay-1000}ms`}}>{children}</div> : <div />
 }
